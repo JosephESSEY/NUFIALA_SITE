@@ -1,0 +1,600 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NUFIALA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">NUFIALA</h1>
+                    <!-- <img src="{% static 'img/logo.png' %}" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Accueil</a>
+                        <a href="#about" class="nav-item nav-link">A propos</a>
+                        <a href="#service" class="nav-item nav-link">Services</a>
+                        <a href="#project" class="nav-item nav-link">Projets</a>
+                        <a href="#review" class="nav-item nav-link">Notre Equipe</a>
+                        <a href="#contact" class="nav-item nav-link">Contacts</a>
+                    </div>
+                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Contact</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">NUFIALA digit</h1>
+                            <p class="text-white pb-3 animated slideInDown">Une entreprise de prestation de services numériques</p>
+                            <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Lire plus</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="{% static 'img/nufiala1.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/nufiala3.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/nufiala2.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/nufiala5.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/nufiala4.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/Version Laptop 3.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Qui somme nous ?</h5>
+                        <h1 class="mb-4">NUFIALA digit</h1>
+                        <p class="mb-4" style="color: #000;">L'Agence NUFIALA est une structure spécialisée dans l'Education Digitale, les Formations et prestations de divers services. Nous avons pour mission d'intéger l'utilisation du numérique dans le quotidien de la population</p>
+
+                        <p class="my-4" style="color: #000;">
+                        En collaboration avec des personnes hautement qualifiées, notre agence fournit des services de qualité supérieure
+                        </p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">300</h2>
+                                        <p class="text-primary-gradient mb-0">Projets</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">75</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/logo1.jpg' %}">
+                    </div> -->
+
+                    <div class="cube">
+                        <div class="boxe">
+                            <div class="face devant">NUFIALA digit</div>
+                            <div class="face arrière"></div>
+                            <div class="face droite"></div>
+                            <div class="face gauche"></div>
+                            <div class="face haut"></div>
+                            <div class="face bas"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5" id="service">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Services</h5>
+                    <h1 class="mb-5">Nos services</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Développement de Sites Web</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Graphisme (Logos, Affiches Etc...)</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Education et Numérique</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Développement d'Applications</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Formations et Conseils</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                            </div>
+                            <h5 class="mb-3">Assistances aux entreprises</h5>
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta molestias quas aliquid totam. Necessitatibus delectus vitae cupiditate! Tempore quasi aperiam officiis, iure quas amet temporibus eveniet. Aut suscipit maxime esse!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        
+
+
+
+
+        <!-- Project Start -->
+        <div class="container-xxl py-5" id="project">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Projets</h5>
+                    <h1 class="mb-5">NOS PROJETS</h1>
+                </div>
+                <div class="tab-class text-center project wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projet Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/nufiala1.jpg' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projet Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/nufiala2.jpg' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projets Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/Version Laptop 3.png' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projets Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/nufiala6.jpg' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projets Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/nufiala7.jpg' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Projets Nufiala</h4>
+                                            
+                                        </div>
+                                        <div class="p-4 pt-0 text-center">
+                                            <img src="{% static 'img/nufiala8.jpg' %}" alt="" width="300px" height="400px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <button class="btn btn-primary-gradient">Voir Plus</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Project end-->
+
+                <!-- Partener Start -->
+                <div class="container-xxl py-5">
+                    <div class="container py-5 px-lg-5">
+                        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                            <h5 class="text-primary-gradient fw-medium">Partenaires</h5>
+                            <h1 class="mb-5">NOS PARTENAIRES</h1>
+                        </div>
+                        <div class="row gy-5 gx-4 justify-content-center">
+                            <div class="owl-carousel partner-carousel wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/togotulawo.jpg' %}" alt="">
+                                        <h5 class="mt-3">TOGOTULAWO</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/new-PNUD-logo-png_ES.png' %}" alt="" height="350px">
+                                        <h5 class="mt-3">PNUD</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/eam.jpg' %}" alt="" height="350px">
+                                        <h5 class="mt-3">ELIAS ALU & MEUBLE</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/monstervile.jpg' %}" alt="" height="350px">
+                                        <h5 class="mt-3">MONSTERVILLE INC</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/télécharger.png' %}" alt="" height="350px">
+                                        <h5 class="mt-3">FAIEJ</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/vega.jpg' %}" alt="" height="350px">
+                                        <h5 class="mt-3">VEGA Recycling</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/LOGO HEMA GROUP.png' %}" alt="" height="350px">
+                                        <h5 class="mt-3">HEMA GROUP</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/LOGO AWOUNA NI.png' %}" alt="" height="350px">
+                                        <h5 class="mt-3">AWOUNA NI</h5>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item rounded p-4">
+                                    <div class="text-center">
+                                        <img src="{% static 'img/MIAVIWO TOGO LOGO.png' %}" alt="" height="350px">
+                                        <h5 class="mt-3">MIAVIWO TOGO</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partner End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Equipe</h5>
+                    <h1 class="mb-5">Notre Equipe</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/david_essigo2.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">David ESSIGO</h5>
+                                <p class="mb-1">Manager</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/josephessey.jpg' %}" style="width: 50px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Joseph ESSEY</h5>
+                                <p class="mb-1">Web Developer</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/marcsanvi.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Marc SANVI</h5>
+                                <p class="mb-1">Apps Developer</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/joelassou.png' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Joel ASSOU</h5>
+                                <p class="mb-1">Data Analysist, FullStack Developer</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/aschrafboukari.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Aschraf BOUKARI</h5>
+                                <p class="mb-1">Web Designer, Graphic Designer</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="{% static 'img/abi.jpg' %}" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Abi August IDOWU</h5>
+                                <p class="mb-1">Graphic Designer</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contacts</h5>
+                    <h1 class="mb-5">NOUS CONTACTER</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name"style="color: #000;">
+                                            <label for="name">Votre Nom</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email"style="color: #000;">
+                                            <label for="email">Votre Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject"style="color: #000;">
+                                            <label for="subject">Sujet</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px;color: #000;"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Envoyer le message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Adresse</h4>
+                        <p><i class="fa fa-map-marker-alt me-3">
+                        </i>Lomé, Totsi Batome, Face l'école primaire</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+228 70721212</p>
+                        <a href="mailto:contact@nufiala-edu.com" style="color: #fff;"><i class="fa fa-envelope me-3"></i>
+                            contact@nufiala-edu.com </a>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/DigitalNufiala/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Liens</h4>
+                        <a class="btn btn-link" href="#about">A propos</a>
+                        <a class="btn btn-link" href="#contact">Nous contacter</a>
+                        <a class="btn btn-link" href="#">Privacy Policy</a>
+                        <a class="btn btn-link" href="#">Terms & Condition</a>
+                        <a class="btn btn-link" href="#">Carière</a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <h4 class="text-white mb-4">Bulletin</h4>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Votre Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row text-center">
+                        <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">NUFIALA</a>, All Right Reserved.
+							Designed By <a class="border-bottom" href="#">NUFIALA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/wow/wow.min.js' %}"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

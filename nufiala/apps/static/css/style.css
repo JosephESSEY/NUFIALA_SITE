@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #114869;
-    --secondary: #3a3737;
+    --secondary: #050505;
     --light: #F0F6FF;
     --dark: #000000;
 }
@@ -162,10 +162,10 @@ h6,
     content: "";
     width: 0;
     height: 0;
-    top: -10px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    border: 10px solid;
+    border: 12px solid;
     border-color: var(--light) transparent transparent transparent;
     transition: .5s;
 }
@@ -335,15 +335,17 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: url(../img/screenshot-frame.png) center center no-repeat;
-    background-size: 253px 500px;
+    background: url(../img/WhatsApp_Image_2023-11-01_à_15.08.38_eef6ec38-removebg-preview.png) center center no-repeat;
+    /* background-size: 253px 500px; */
+    background-size: 820px 600px;
     z-index: 1;
 }
 
 .screenshot-carousel .owl-item img {
     position: relative;
     width: 223px;
-    height: 470px;
+    /* height: 470px; */
+    height: 432px;
 }
 
 .screenshot-carousel .owl-dots {
@@ -363,8 +365,9 @@ h6,
     margin: 5px 0;
     width: 15px;
     height: 15px;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    border-radius: 15px;
+    /* background: linear-gradient(to bottom right, var(--primary), var(--secondary)); */
+    background-color: #ff0000;
+    border-radius: 20px;
     transition: .5s;
 }
 
@@ -375,7 +378,7 @@ h6,
     height: 5px;
     top: 5px;
     left: 5px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 5px;
 }
 
@@ -385,6 +388,14 @@ h6,
 
 /* Partner Carrousel */
 
+/* .partner-carousel .owl-item{
+    width: 250px !important;
+} */
+
+.partner-carousel .owl-stage{
+    /* width: 4450px !important;
+    height: 500px !important; */
+}
 .partner-carousel .owl-item .testimonial-item,
 .partner-carousel .owl-item .testimonial-item * {
     transition: .5s;
